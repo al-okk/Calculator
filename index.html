@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrapcssfile.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="main-contain">
+        <section>
+            <p class="text-center bg-info py-3 fs-1">Calculator program in JavaScript</p>
+        </section>
+        <section class="container1">
+            <div class="zero-row  d-flex justify-content-between">
+                <input type="text" name="input" id="takeinput" class="form-control mb-3 py-5">
+                <button id="input" onclick="input('backspace')" class="closebutton">
+                    <i class="fa-sharp fa-solid fa-square-xmark"></i>
+                </button>
+            </div>
+        </section>
+        <section class="container">
+            <div class="first-row d-flex justify-content-between">
+                <button id="input" onclick="input('1')">
+                    1
+                </button>
+                <button id="input" onclick="input('2')">
+                    2
+                </button>
+                <button id="input" onclick="input('3')">
+                    3
+                </button>
+                <button id="input" onclick="input('+')">
+                    +
+                </button>
+            </div>
+            <div class="second-row d-flex justify-content-between">
+                <button id="input" onclick="input('4')">
+                    4
+                </button>
+                <button id="input" onclick="input('5')">
+                    5
+                </button>
+                <button id="input" onclick="input('6')">
+                    6
+                </button>
+                <button id="input" onclick="input('-')">
+                    -
+                </button>
+            </div>
+            <div class="thrird-row d-flex justify-content-between">
+                <button id="input" onclick="input('7')">
+                    7
+                </button>
+                <button id="input" onclick="input('8')">
+                    8
+                </button>
+                <button id="input" onclick="input('9')">
+                    9
+                </button>
+                <button id="input" onclick="input('*')">
+                    *
+                </button>
+            </div>
+            <div class="fourth-row d-flex justify-content-between">
+                <button id="input" onclick="input('/')">
+                    /
+                </button>
+                <button id="input" onclick="input('0')">
+                    0
+                </button>
+                <button id="input" onclick="input('.')">
+                    .
+                </button>
+                <button onclick="onHandleInput()" id="equal">
+                    =
+                </button>
+            </div>
+            <div class="fifth-row d-flex justify-content-between">
+                
+                <button id="input" onclick="input('^')">
+                    power
+                </button>
+                <button id="input" onclick="input('0b')">
+                    Binary to Decimal
+                </button>
+                <button id="input" onclick="input('0')">
+                    Octol to Decimal
+                </button>
+                <button id="input" onclick="input('0x')">
+                    HexaDecimal to Decimal
+                </button>
+            </div>
+            <div class="sixth-row">
+                <button class="w-100" id="input" onclick="clearAll()">
+                    Clear All
+                </button>
+            </div>
+
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
